@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-* {
+
+@media screen and (min-height: 400px) {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
+  }
+.mobile{
+  display: none;
 }
-
-.game-board {
+  .game-board {
     width: 100%;
     height: 500px;
     margin: 0 auto;
@@ -15,76 +19,76 @@
     position: relative;
     overflow: hidden;
     background: linear-gradient(#87CEEB, #E0F6FF);
-}
+  }
 
-.pipe {
+  .pipe {
     position: absolute;
     bottom: 0;
     height: 80px;
     animation: pipeAnimation 1.5s infinite linear
-}
+  }
 
-@keyframes pipeAnimation {
+  @keyframes pipeAnimation {
 
     from {
-        right: -80px;
+      right: -80px;
     }
 
     to {
-        right: 100%;
+      right: 100%;
     }
-}
+  }
 
-.mario {
+  .mario {
     position: absolute;
     width: 150px;
     bottom: 0;
 
-}
+  }
 
-.jump {
+  .jump {
     animation: marioJump 500ms ease-out;
-}
+  }
 
-@keyframes marioJump {
+  @keyframes marioJump {
     0% {
-        bottom: 0px;
+      bottom: 0px;
     }
 
     40% {
-        bottom: 180px;
+      bottom: 180px;
     }
 
     50% {
-        bottom: 180px;
+      bottom: 180px;
     }
 
     60% {
-        bottom: 180px;
+      bottom: 180px;
     }
 
     100% {
-        bottom: 0px;
+      bottom: 0px;
     }
-}
+  }
 
-.clouds {
+  .clouds {
     position: absolute;
     width: 550px;
     animation: cloudsAnimation 20s infinite linear;
-}
+  }
 
-@keyframes cloudsAnimation {
+  @keyframes cloudsAnimation {
     from {
-        right: -550px;
+      right: -550px;
     }
 
     to {
-        right: 100%;
+      right: 100%;
     }
-}
+  }
 
-.score {
+  .score {
     position: absolute;
     width: 150px;
     height: 90px;
@@ -93,8 +97,10 @@
     color: goldenrod;
     font-family: 'Press Start 2P', cursive;
 
-}
-.score-point{
+  }
+
+  .score-point {
     text-align: center;
     font-size: 50px;
+  }
 }

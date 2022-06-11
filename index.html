@@ -2,23 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/css/styleGame.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario Game</title>
+  <link rel="stylesheet" href="./src/css/desktopStyle.css">
+  <link rel="stylesheet" type="text/css" href="./src/css/mobileLandscape.css" media="screen and (orientation: landscape)">
+  <link rel="stylesheet" type="text/css" href="./src/css/mobilePortrait.css" media="screen and (orientation: portrait)">
 </head>
 
 <body>
-    <div class="game-board">
-        <div class="score">
-            <p class="score-point">0</p>
-        </div>
-        <img src="./src/images/clouds.png" alt="" class="clouds">
-        <img src="./src/images/pipe.png" alt="this is as tube" class="pipe">
-        <img src="./src/images/mario.gif" alt="" class="mario">
+  <div class="mobile">
+    <img class="imgMobile" src="./src/images/mobile.gif" alt="" />
+  </div>
+ <div class="game-board">
+    <div class="score">
+      <p class="score-point">0</p>
     </div>
-    <script src="./src/js/gameScript.js"></script>
+    <div class="preload">
+      <p class="preloadText">Clique em qualquer lugar para começar!</p>
+    </div>
+    <img src="./src/images/clouds.png" alt="j" class="clouds">
+    <img src="./src/images/pipe.png" alt="this is as tube" class="pipe">
+    <img src="./src/images/mario.gif" alt="" class="mario">
+  </div>
+  <script src="./src/js/gameScript.js"></script> 
 </body>
 
 </html>
