@@ -1,16 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Press Start 2P', cursive;
-
-}
-
 body {
   border-bottom: 30px solid #a66948;
-
 }
 
 .mobile {
@@ -76,6 +67,7 @@ body {
   position: relative;
   overflow: hidden;
   background: linear-gradient(#87CEEB, #E0F6FF);
+
 }
 
 .pipe {
@@ -174,4 +166,8 @@ body {
 
 .scorePontStart {
   display: block;
+}
+
+.backGame {
+  display: none;
 }

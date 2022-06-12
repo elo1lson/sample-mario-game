@@ -8,13 +8,6 @@
 
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-  }
-
   .mobile {
     display: none;
   }
@@ -30,9 +23,7 @@
     background: linear-gradient(#87CEEB, #E0F6FF);
   }
 
-
   .preload {
-    /*position: absolute;*/
     text-align: center;
     width: 60%;
     left: 20%;
@@ -83,13 +74,6 @@
 
   }
 
-  .background {
-    display: block;
-    width: 100%;
-    min-height: 100px;
-    ;
-  }
-
   .backGame {
     width: 300%;
     min-height: 50px;
@@ -121,26 +105,11 @@
     }
   }
 
-  .score {
-    position: absolute;
-    width: 150px;
-    height: 90px;
-    right: 45px;
-    margin-top: 50px;
-    color: goldenrod;
-    
-
-
-  }
-
-  .score-point {
-    text-align: center;
-    font-size: 50px;
-    z-index: 1;
-   
-  }
-
-  .scorePontStart {
+  .background {
     display: block;
+    width: 100%;
+    min-height: 100px;
   }
+
+  
 }

@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Game</title>
-    <link rel="stylesheet" href="./src/css/desktopStyle.css">
-    <link rel="stylesheet" type="text/css" href="./src/css/mobileLandscape.css"
-        media="screen and (orientation: landscape)">
-    <link rel="stylesheet" type="text/css" href="./src/css/mobilePortrait.css"
-        media="screen and (orientation: portrait)">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Que tal um jogo simples com uma mistura de Super Mario e Flappy Bird?">
+  
+  <title>Mario Game</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./src/images/  apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" type="text/css" href="./src/css/desktopStyle.css">
+  <link rel="stylesheet" type="text/css" href="./src/css/globalStyle.css" media="screen and (orientation: landscape)">
+  <link rel="stylesheet" type="text/css" href="./src/css/mobilePortrait.css" media="screen and (orientation: portrait)">
+  <link rel="stylesheet" type="text/css" href="./src/css/globalReset.css" media="all">
 </head>
 
 <body>
-    <div class="mobile">
-        <img class="imgMobile" src="./src/images/mobile.gif" alt="" />
+  <div class="mobile">
+    <img class="imgMobile" src="./src/images/mobile.gif" alt="" />
+  </div>
+  <div class="game-board">
+    <div class="score">
+      <p class="score-point">0</p>
     </div>
-    <div class="game-board">
-        <div class="score">
-            <p class="score-point">0</p>
-        </div>
-        <div class="preload">
-            <p class="preloadText">Clique em qualquer lugar para começar!</p>
-        </div>
-        <img src="./src/images/clouds.png" alt="j" class="clouds">
-        <img src="./src/images/pipe.png" alt="this is as tube" class="pipe">
-        <img src="./src/images/mario.gif" alt="" class="mario">
+    <div class="preload">
+      <p class="preloadText">Clique em qualquer lugar para começar!</p>
     </div>
-    <div class="backGame">
-
-        <img src="./src/images/20483.jpg" alt="" class="background">
-    </div>
-    <script src="./src/js/gameScript.js"></script>
+    <img src="./src/images/clouds.png" alt="j" class="clouds">
+    <img src="./src/images/pipe.png" alt="this is as tube" class="pipe">
+    <img src="./src/images/mario.gif" alt="" class="mario">
+  </div>
+  <div class="backGame">
+    <img src="./src/images/20483.jpg" alt="terrain" class="background">
+  </div>
+  <script src="./src/js/gameScript.js"></script>
 </body>
 
 </html>
