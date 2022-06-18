@@ -74,13 +74,13 @@ body {
   position: absolute;
   bottom: 0;
   height: 60px;
-  animation: pipeAnimation 1.5s infinite linear
+  animation: pipeAnimation 1.9s infinite linear
 }
 
 @keyframes pipeAnimation {
 
   from {
-    right: -60px;
+    right: -100px;
   }
 
   to {
@@ -97,7 +97,7 @@ body {
 
 
 .jump {
-  animation: marioJump 600ms ease-out;
+  animation: marioJump 700ms ease-out;
 }
 
 @keyframes marioJump {
@@ -114,7 +114,7 @@ body {
   }
 
   50% {
-    bottom: 85px;
+    bottom: 90px;
   }
 
   60% {
@@ -170,4 +170,12 @@ body {
 
 .backGame {
   display: none;
+}
+
+.img-restart {
+  text-align: center;
+  width: 60px;
+  margin: 0 auto;
+  margin-top: 90px;
+
 }
