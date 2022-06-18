@@ -72,8 +72,16 @@ function gameRun() {
         mario.src = '../src/images/mario.gif';
       })
 
-    }
+      document.addEventListener('keydown', () => {
+        restart.style.display = 'none'
 
+        pipe.style = b
+        mario.style = c
+        mario.src = '../src/images/mario.gif';
+      })
+
+    }
+   
   }
   const Loop = setInterval(runGame, 10)
 
