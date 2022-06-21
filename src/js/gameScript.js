@@ -23,6 +23,7 @@ function gameRun() {
   let device = 2;
 
   function globalJump() {
+
     firstGame = false;
 
     preLoad.style.display = 'none';
@@ -30,9 +31,10 @@ function gameRun() {
 
     setTimeout(() => {
       mario.classList.remove('jump');
-    }, 500)
 
-
+    }, 500).then(() => {
+      alert(6)
+    })
   }
 
   function runGame() {
@@ -44,9 +46,9 @@ function gameRun() {
       mario.classList.add('jump');
 
       setTimeout(() => {
+
         mario.classList.remove('jump');
       }, 500)
-
 
     }
 
@@ -65,15 +67,15 @@ function gameRun() {
       restart.style.display = 'block'
 
       buttonRestart.addEventListener('touchstart', () => {
-        restart.style.display = 'none'
+        preLoad.style.display = 'none'
 
         pipe.style = b
         mario.style = c
         mario.src = '../src/images/mario.gif';
       })
 
-      document.addEventListener('keydown', () => {
-        restart.style.display = 'none'
+      buttonRestart.addEventListener('click', () => {
+        preLoad.style.display = 'none'
 
         pipe.style = b
         mario.style = c
@@ -81,7 +83,7 @@ function gameRun() {
       })
 
     }
-   
+
   }
   const Loop = setInterval(runGame, 10)
 
